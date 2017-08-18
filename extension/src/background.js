@@ -1,9 +1,11 @@
+/* jshint esversion: 6 */
 /* globals chrome */
 
 (function () {
+    'use strict';
 
-    var url;
-    var cookie;
+    let url;
+    let cookie;
 
     chrome.storage.sync.get(function (o) {
         url = o.url;
