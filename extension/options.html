@@ -2,12 +2,26 @@
 <html>
 <head>
     <title>Notifications for JIRA Options</title>
+    <style>
+div {
+    margin-bottom: 10px;
+}
+    </style>
 </head>
 <body>
-<label>
-    <input id="url" style="width: 100%"/>
-    JIRA URL
-</label>
-<script src="options.js"></script>
+    <div>
+        <label>
+            JIRA URL
+            <input id="url" style="width: 300px;"/>
+        </label>
+    </div>
+    <div>
+        <label>
+            Poll frequency
+            <input id="poll" type="number" size="3" style="width: 50px;"/>
+            minutes
+        </label>
+    </div>
+    <script src="dist/options.js"></script>
 </body>
 </html>
